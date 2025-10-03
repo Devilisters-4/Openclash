@@ -1,0 +1,117 @@
+proxies:
+
+- name: 💾🃏gprc
+  server: idvpn.rerechanstore.eu.org
+  port: 443
+  type: trojan
+  password: fd7659be-ea06-4d9f-85c3-9d8123c856b9
+  skip-cert-verify: true
+  sni: ava.game.naver.com.idvpn.rerechanstore.eu.org
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+  udp: true
+
+- name: 💾gprc
+  server: idvpn.rerechanstore.eu.org
+  port: 443
+  type: trojan
+  password: fd7659be-ea06-4d9f-85c3-9d8123c856b9
+  skip-cert-verify: true
+  sni: ava.game.naver.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+  udp: true
+
+- name: 💾🃏tls
+  server: idvpn.rerechanstore.eu.org
+  port: 443
+  type: trojan
+  password: fd7659be-ea06-4d9f-85c3-9d8123c856b9
+  skip-cert-verify: true
+  sni: ava.game.naver.com.idvpn.rerechanstore.eu.org
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: ava.game.naver.com.idvpn.rerechanstore.eu.org
+  udp: true
+
+- name: 💾tls
+  server: idvpn.rerechanstore.eu.org
+  port: 443
+  type: trojan
+  password: fd7659be-ea06-4d9f-85c3-9d8123c856b9
+  skip-cert-verify: true
+  sni: ava.game.naver.com
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: ava.game.naver.com
+  udp: true
+
+- name: x♾️🃏gRPC
+  server: id-atha001.gosni.web.id
+  type: vmess
+  port: 443
+  uuid: 4c6983e5-e13d-55ac-bf23-0b386c2ed135
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: ava.game.naver.com.id-atha001.gosni.web.id
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: x♾️gRPC
+  server: id-atha001.gosni.web.id
+  type: vmess
+  port: 443
+  uuid: 4c6983e5-e13d-55ac-bf23-0b386c2ed135
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: ava.game.naver.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: x♾️🃏WS
+  server: id-atha001.kegiatanja.my.id
+  type: vmess
+  port: 443
+  uuid: 4c6983e5-e13d-55ac-bf23-0b386c2ed135
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: ava.game.naver.com.id-atha001.kegiatanja.my.id
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: ava.game.naver.com.id-atha001.kegiatanja.my.id
+  udp: true
+
+- name: x♾️WS
+  server: id-atha001.kegiatanja.my.id
+  type: vmess
+  port: 443
+  uuid: 4c6983e5-e13d-55ac-bf23-0b386c2ed135
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: ava.game.naver.com
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: ava.game.naver.com
+  udp: true
